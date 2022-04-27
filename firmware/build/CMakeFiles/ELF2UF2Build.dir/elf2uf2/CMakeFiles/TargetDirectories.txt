@@ -1,0 +1,5 @@
+/home/amalmathew/Desktop/wiznet_ethernet_hat_contest/FW_Tests/Be_Awake_IP_Hardwired_Nurse_Call_System/Firmware/build/elf2uf2/CMakeFiles/rebuild_cache.dir
+/home/amalmathew/Desktop/wiznet_ethernet_hat_contest/FW_Tests/Be_Awake_IP_Hardwired_Nurse_Call_System/Firmware/build/elf2uf2/CMakeFiles/edit_cache.dir
+/home/amalmathew/Desktop/wiznet_ethernet_hat_contest/FW_Tests/Be_Awake_IP_Hardwired_Nurse_Call_System/Firmware/build/elf2uf2/CMakeFiles/elf2uf2.dir
+/home/amalmathew/Desktop/wiznet_ethernet_hat_contest/FW_Tests/Be_Awake_IP_Hardwired_Nurse_Call_System/Firmware/build/elf2uf2/boot_uf2_headers/CMakeFiles/rebuild_cache.dir
+/home/amalmathew/Desktop/wiznet_ethernet_hat_contest/FW_Tests/Be_Awake_IP_Hardwired_Nurse_Call_System/Firmware/build/elf2uf2/boot_uf2_headers/CMakeFiles/edit_cache.dir
