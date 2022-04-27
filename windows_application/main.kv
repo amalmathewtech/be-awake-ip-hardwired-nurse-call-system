@@ -1,0 +1,479 @@
+#:import Factory kivy.factory.Factory
+
+#:import hex kivy.utils.get_color_from_hex
+
+#:set blue hex('#0f58d6')
+#:set red hex('#eb202a')
+
+#:set Arial_regular ('./fonts/Arial_regular.ttf')
+#:set Arial_bold ('./fonts/Arial_bold.ttf')
+#:set Arial_black ('./fonts/Arial_black.ttf')
+#:set  Chevin   ('./fonts/ChevinLight.ttf')
+
+#:import partial functools.partial
+
+#:set Top_Border_px 0.0225
+#:set Top_Border_py 0.965
+#:set Top_Border_sx 0.975
+#:set Top_Border_sy 0.037
+#:set Br_clr_blue blue
+#:set Br_clr_red red
+
+#:set Top_Border_px1 0.001
+#:set Top_Border_sx1 0.02
+
+#:set Btm_Border_sizy 0.01
+
+#:set Btm_Border_py 0.010
+#:set Btm_Border_sizy2 0.04
+
+
+<MainScreen>:
+
+    RelativeLayout:
+        Widget:
+            id:top_Border1
+            pos_hint: {"x":Top_Border_px1,"y":Top_Border_py}
+            size_hint:(self.height,Btm_Border_sizy2)
+            canvas:
+                Color:
+                    rgb:  Br_clr_blue
+                Rectangle:
+                    pos: self.pos
+                    size: self.size
+
+        Widget:
+            id:Bottom_Border2
+            pos_hint: {"y":Btm_Border_py}
+            size_hint:(self.height,Btm_Border_sizy2)
+            canvas:
+                Color:
+                    rgb: Br_clr_blue
+                Rectangle:
+                    pos: self.pos
+                    size: self.size
+
+
+		MDCard:
+			id: room_1
+			default_color:(.058,.34,.83,1)
+            orientation: "vertical"
+            padding: "8dp"
+            size_hint: None, None
+            size: "175dp", "175dp"
+            pos_hint: {"x":0.250,"top":0.945}
+            canvas:
+				Color:
+                    rgb: self.default_color
+                Rectangle:
+                    size: self.size
+                    pos: self.pos
+
+            MDLabel:
+                id:t1
+                markup: True
+                text: "1"
+                color: 1,1,1,1
+                font_size : 50
+				halign: "center"	
+            		
+		MDCard:
+			id: room_2
+			default_color:(.058,.34,.83,1)
+            orientation: "vertical"
+            padding: "8dp"
+            size_hint: None, None
+            size: "175dp", "175dp"
+            pos_hint: {"x":0.400,"top":0.945}
+            canvas:
+                Color:
+                    rgba: self.default_color
+                Rectangle:
+                    size: self.size
+                    pos: self.pos
+
+
+
+            MDLabel:
+                id:t1
+                markup: True
+                text: "2"
+                color: 1,1,1,1
+                font_size : 50
+				halign: "center"
+							
+		MDCard:
+			id: room_3
+			default_color:(.058,.34,.83,1)
+            orientation: "vertical"
+            padding: "8dp"
+            size_hint: None, None
+            size: "175dp", "175dp"
+            pos_hint: {"x":0.550,"top":0.945}
+            canvas:
+                Color:
+                    rgba: self.default_color
+                Rectangle:
+                    size: self.size
+                    pos: self.pos
+
+
+
+            MDLabel:
+                id:t1
+                markup: True
+                text: "3"
+                color: 1,1,1,1
+                font_size : 50
+				halign: "center"
+            
+
+
+
+       
+					
+		MDCard:
+			id: room_4
+			default_color:(.058,.34,.83,1)
+            orientation: "vertical"
+            padding: "8dp"
+            size_hint: None, None
+            size: "175dp", "175dp"
+            pos_hint: {"x":0.700,"top":0.945}
+            canvas:
+                Color:
+                    rgba: self.default_color
+                Rectangle:
+                    size: self.size
+                    pos: self.pos
+
+
+
+            MDLabel:
+                id:t1
+                markup: True
+                text: "4"
+                color: 1,1,1,1
+                font_size : 50
+				halign: "center"
+				
+		MDCard:
+			id: room_5
+			default_color:(.058,.34,.83,1)
+            orientation: "vertical"
+            padding: "8dp"
+            size_hint: None, None
+            size: "175dp", "175dp"
+            pos_hint: {"x":0.850,"top":0.945}
+            canvas:
+                Color:
+                    rgba: self.default_color
+                Rectangle:
+                    size: self.size
+                    pos: self.pos
+
+
+
+            MDLabel:
+                id:t1
+                markup: True
+                text: "5"
+                color: 1,1,1,1
+                font_size : 50
+				halign: "center"
+            
+
+
+
+        
+					
+		MDCard:
+			id: room_6
+			default_color:(.058,.34,.83,1)
+            orientation: "vertical"
+            padding: "8dp"
+            size_hint: None, None
+            size: "175dp", "175dp"
+            pos_hint: {"x":0.250,"top":0.650}
+            canvas:
+                Color:
+                    rgba: self.default_color
+                Rectangle:
+                    size: self.size
+                    pos: self.pos
+
+
+
+            MDLabel:
+                id:t1
+                markup: True
+                text: "6"
+                color: 1,1,1,1
+                font_size : 50
+				halign: "center"
+            
+
+
+
+       
+					
+		MDCard:
+			id: room_7
+			default_color:(.058,.34,.83,1)
+            orientation: "vertical"
+            padding: "8dp"
+            size_hint: None, None
+            size: "175dp", "175dp"
+            pos_hint: {"x":0.400,"top":0.650}
+            canvas:
+                Color:
+                    rgba: self.default_color
+                Rectangle:
+                    size: self.size
+                    pos: self.pos
+
+
+
+            MDLabel:
+                id:t1
+                markup: True
+                text: "7"
+                color: 1,1,1,1
+                font_size : 50
+				halign: "center"
+				
+		MDCard:
+			id: room_8
+			default_color:(.058,.34,.83,1)
+            orientation: "vertical"
+            padding: "8dp"
+            size_hint: None, None
+            size: "175dp", "175dp"
+            pos_hint: {"x":0.550,"top":0.650}
+            canvas:
+                Color:
+                    rgba: self.default_color
+                Rectangle:
+                    size: self.size
+                    pos: self.pos
+
+
+
+            MDLabel:
+                id:t1
+                markup: True
+                text: "8"
+                color: 1,1,1,1
+                font_size : 50
+				halign: "center"
+				
+		MDCard:
+			
+			id: room_9
+			default_color:(.058,.34,.83,1)
+            orientation: "vertical"
+            padding: "8dp"
+            size_hint: None, None
+            size: "175dp", "175dp"
+            pos_hint: {"x":0.700,"top":0.650}
+            canvas:
+                Color:
+                    rgba: self.default_color
+                Rectangle:
+                    size: self.size
+                    pos: self.pos
+
+
+
+            MDLabel:
+                id:t1
+                markup: True
+                text: "9"
+                color: 1,1,1,1
+                font_size : 50
+				halign: "center"
+				
+		MDCard:
+			id: room_10
+			default_color:(.058,.34,.83,1)
+            orientation: "vertical"
+            padding: "8dp"
+            size_hint: None, None
+            size: "175dp", "175dp"
+            pos_hint: {"x":0.850,"top":0.650}
+            canvas:
+                Color:
+                    rgba: self.default_color
+                Rectangle:
+                    size: self.size
+                    pos: self.pos
+
+
+
+            MDLabel:
+                id:t1
+                markup: True
+                text: "10"
+                color: 1,1,1,1
+                font_size : 50
+				halign: "center"
+				
+		MDCard:
+			id: room_11
+			default_color:(.058,.34,.83,1)
+            orientation: "vertical"
+            padding: "8dp"
+            size_hint: None, None
+            size: "175dp", "175dp"
+            pos_hint: {"x":0.250,"top":0.350}
+            canvas:
+                Color:
+                    rgba: self.default_color
+                Rectangle:
+                    size: self.size
+                    pos: self.pos
+
+
+
+            MDLabel:
+                id:t1
+                markup: True
+                text: "11"
+                color: 1,1,1,1
+                font_size : 50
+				halign: "center"
+		MDCard:
+			id: room_12
+			default_color:(.058,.34,.83,1)
+            orientation: "vertical"
+            padding: "8dp"
+            size_hint: None, None
+            size: "175dp", "175dp"
+            pos_hint: {"x":0.400,"top":0.350}
+            canvas:
+                Color:
+                    rgba: self.default_color
+                Rectangle:
+                    size: self.size
+                    pos: self.pos
+
+
+
+            MDLabel:
+                id:t1
+                markup: True
+                text: "12"
+                color: 1,1,1,1
+                font_size : 50
+				halign: "center"
+				
+		MDCard:
+			id: room_13
+			default_color:(.058,.34,.83,1)
+            orientation: "vertical"
+            padding: "8dp"
+            size_hint: None, None
+            size: "175dp", "175dp"
+            pos_hint: {"x":0.550,"top":0.350}
+            canvas:
+                Color:
+                    rgba: self.default_color
+                Rectangle:
+                    size: self.size
+                    pos: self.pos
+
+
+
+            MDLabel:
+                id:t1
+                markup: True
+                text: "13"
+                color: 1,1,1,1
+                font_size : 50
+				halign: "center"
+				
+		MDCard:
+			id: room_14
+			default_color:(.058,.34,.83,1)
+            orientation: "vertical"
+            padding: "8dp"
+            size_hint: None, None
+            size: "175dp", "175dp"
+            pos_hint: {"x":0.700,"top":0.350}
+            canvas:
+                Color:
+                    rgba: self.default_color
+                Rectangle:
+                    size: self.size
+                    pos: self.pos
+
+
+
+            MDLabel:
+                id:t1
+                markup: True
+                text: "14"
+                color: 1,1,1,1
+                font_size : 50
+				halign: "center"
+				
+		
+		MDCard:
+			id: room_15
+			default_color:(.058,.34,.83,1)
+            orientation: "vertical"
+            padding: "8dp"
+            size_hint: None, None
+            size: "175dp", "175dp"
+            pos_hint: {"x":0.850,"top":0.350}
+            canvas:
+                Color:
+                    rgba: self.default_color
+                Rectangle:
+                    size: self.size
+                    pos: self.pos
+
+
+
+            MDLabel:
+                id:t1
+                markup: True
+                text: "15"
+                color: 1,1,1,1
+                font_size : 50
+				halign: "center"
+				
+		Label:
+            id:ULS_lbl_conn_sts
+            markup:True
+            pos_hint: {"x":0.070,"y":0.0260}
+            size_hint:(0.15,0.09)
+            #text: ''
+            font_size: (ULS_lbl_conn_sts.height)/4
+            font_name:Chevin
+            color: hex('#050505')
+
+        MDCard:
+            orientation: "vertical"
+            padding: "8dp"
+            size_hint: None, None
+            size: "280dp", "590dp"
+            pos_hint: {"x":0.012,"top":0.945}
+            canvas:
+                Color:
+                    rgba: blue
+                Rectangle:
+                    size: self.size
+                    pos: self.pos
+
+
+
+            MDLabel:
+                id:t1
+                markup: True
+                text: "[b] BE AWAKE NURSE CALL SYSTEM [/b]"
+                color: 1,1,1,1
+                font_size : 50
+				halign: "center"
+
+           
