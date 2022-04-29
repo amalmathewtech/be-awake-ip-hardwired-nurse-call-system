@@ -12,6 +12,6 @@ The Windows based application was made using Python's kivy framework.
 
 Downaload Windows Application from <a href="https://github.com/amalmathewtech/be-awake-ip-hardwired-nurse-call-system/blob/main/windows_application/executable_file/setup.exe">here</a>
 
-Documentation:
+Documentation:https://www.hackster.io/amalmathewtech/be-awake-ip-hardwired-nurse-call-system-1eb97d
 
 
